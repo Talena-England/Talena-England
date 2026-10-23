@@ -8,7 +8,11 @@
 
 #### Projects I'm proud of
 
-**Watchdog** is Otto's internal home for automated test results. Every suite reports its runs in from CI, and Watchdog turns them into one place to see what's passing, what's flaky and what actually broke. I led its rebrand and built most of what it does today: automatic failure triage, lane-only failure callouts, flaky and broken tests that file their own tickets (which retired our Slack failure alerts), starting runs from the UI, feature coverage, test documentation, a redesigned run detail page and dark mode.
+<details>
+<summary><b>Watchdog</b> · Otto's internal home for automated test results</summary>
+<br>
+
+Every automated test suite at Otto reports its runs in from CI, and Watchdog turns them into one place to see what's passing, what's flaky and what actually broke. I led its rebrand and built most of what it does today: automatic failure triage, lane-only failure callouts, flaky and broken tests that file their own tickets (which retired our Slack failure alerts), starting runs from the UI, feature coverage, test documentation, a redesigned run detail page and dark mode.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/watchdog/history-dark.png">
@@ -57,3 +61,5 @@
 </details>
 
 <sub>Screenshots run on made-up demo data. Watchdog is internal, so its code and data stay private.</sub>
+
+</details>
