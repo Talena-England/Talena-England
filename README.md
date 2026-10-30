@@ -63,3 +63,30 @@ Every automated test suite at Otto reports its runs in from CI, and Watchdog tur
 <sub>Screenshots run on made-up demo data. Watchdog is internal, so its code and data stay private.</sub>
 
 </details>
+
+<details>
+<summary><b>QA skills for Claude Code</b> · AI workflows that help Otto's QA team test faster</summary>
+<br>
+
+Otto's engineering team shares a workspace of Claude Code skills. I built most of its QA side: four skills I created and two I extended. Together they take a ticket from the first read through to a verified fix.
+
+| Skill | What it does | My part |
+|---|---|---|
+| **Write QA notes** | Drafts a ticket's testing steps in the team's QA format | Created |
+| **QA task research** | Finds every branch, PR and code change behind a ticket and explains it before testing starts | Created |
+| **Fix E2E tests** | Traces a failing CI run or Playwright trace to its root cause and a fix, then checks the fix on fresh runs instead of retries | Created |
+| **Write E2E test** | Writes new Playwright tests that follow each suite's own patterns | Created |
+| **Manual verification** | Runs a QA plan step by step and records pass/fail with screenshots | Added a Flow browser driver (including two-user scenarios), a blind QA pass, and an approval gate for test data |
+| **Verify test coverage** | Compares a ticket's changes against unit and E2E tests and names the gaps | Connected it to Watchdog's feature coverage |
+
+I also made all of them work with both of Otto's E2E suites, and I keep their docs in step with how the suites actually run.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/qa-skills/manual-verification-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/qa-skills/manual-verification-light.png">
+  <img alt="Manual verification run record: seven scenarios with expected and actual results, one failed double-submit check, and a verdict with the blind-pass agreement" src="assets/qa-skills/manual-verification-light.png">
+</picture>
+
+<sub>A manual verification run record, on made-up demo data. The workspace is internal, so its code stays private.</sub>
+
+</details>
